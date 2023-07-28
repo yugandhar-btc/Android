@@ -16,56 +16,56 @@ android {
     //   versionCode 15
     //   versionName "1.0"
     // }
-    bubs {
-      dimension 'version'
-      applicationId "com.validcare.bubs"
-      namespace "com.harvard"
-      versionCode 435001
-      versionName "4.3.5"
-      // versionNameSuffix "-cw"
+    // bubs {
+    //   dimension 'version'
+    //   applicationId "com.validcare.bubs"
+    //   namespace "com.harvard"
+    //   versionCode 435001
+    //   versionName "4.3.5"
+    //   // versionNameSuffix "-cw"
 
-            // Include (or overwrite) default api.properties with custom properties
-            def apiFlavorPropertiesFile = rootProject.file("api-bubs-prod.properties")
-            def apiFlavorProperties = new Properties()
-            apiFlavorProperties.load(new FileInputStream(apiFlavorPropertiesFile))
-            buildConfigField("String", "API_KEY", apiFlavorProperties['API_KEY'])
-            buildConfigField("String", "BASE_URL_STUDY_DATASTORE", apiFlavorProperties['BASE_URL_STUDY_DATASTORE'])
-            buildConfigField("String", "BASE_URL_PARTICIPANT_DATASTORE", apiFlavorProperties['BASE_URL_PARTICIPANT_DATASTORE'])
-            buildConfigField("String", "BASE_URL_PARTICIPANT_CONSENT_DATASTORE", apiFlavorProperties['BASE_URL_PARTICIPANT_CONSENT_DATASTORE'])
-            buildConfigField("String", "BASE_URL_PARTICIPANT_ENROLLMENT_DATASTORE", apiFlavorProperties['BASE_URL_PARTICIPANT_ENROLLMENT_DATASTORE'])
-            buildConfigField("String", "BASE_URL_AUTH_SERVER", apiFlavorProperties['BASE_URL_AUTH_SERVER'])
-            buildConfigField("String", "BASE_URL_HYDRA_SERVER", apiFlavorProperties['BASE_URL_HYDRA_SERVER'])
-            buildConfigField("String", "BASE_URL_RESPONSE_DATASTORE", apiFlavorProperties['BASE_URL_RESPONSE_DATASTORE'])
-            buildConfigField("String", "APP_TYPE", apiFlavorProperties['APP_TYPE'])
-            buildConfigField("String", "APP_ID", apiFlavorProperties['APP_ID'])
-            buildConfigField("String", "HYDRA_CLIENT_ID", apiFlavorProperties['HYDRA_CLIENT_ID'])
-            buildConfigField("String", "STUDY_ID", apiFlavorProperties['STUDY_ID'])
-      }
-        validcare {
-            dimension 'version'
-            applicationId "com.validcare.studies"
-            namespace "com.harvard"
-            versionCode 435001
-            versionName "4.3.5"
-            // versionNameSuffix "-vc"
+    //         // Include (or overwrite) default api.properties with custom properties
+    //         def apiFlavorPropertiesFile = rootProject.file("api-bubs-prod.properties")
+    //         def apiFlavorProperties = new Properties()
+    //         apiFlavorProperties.load(new FileInputStream(apiFlavorPropertiesFile))
+    //         buildConfigField("String", "API_KEY", apiFlavorProperties['API_KEY'])
+    //         buildConfigField("String", "BASE_URL_STUDY_DATASTORE", apiFlavorProperties['BASE_URL_STUDY_DATASTORE'])
+    //         buildConfigField("String", "BASE_URL_PARTICIPANT_DATASTORE", apiFlavorProperties['BASE_URL_PARTICIPANT_DATASTORE'])
+    //         buildConfigField("String", "BASE_URL_PARTICIPANT_CONSENT_DATASTORE", apiFlavorProperties['BASE_URL_PARTICIPANT_CONSENT_DATASTORE'])
+    //         buildConfigField("String", "BASE_URL_PARTICIPANT_ENROLLMENT_DATASTORE", apiFlavorProperties['BASE_URL_PARTICIPANT_ENROLLMENT_DATASTORE'])
+    //         buildConfigField("String", "BASE_URL_AUTH_SERVER", apiFlavorProperties['BASE_URL_AUTH_SERVER'])
+    //         buildConfigField("String", "BASE_URL_HYDRA_SERVER", apiFlavorProperties['BASE_URL_HYDRA_SERVER'])
+    //         buildConfigField("String", "BASE_URL_RESPONSE_DATASTORE", apiFlavorProperties['BASE_URL_RESPONSE_DATASTORE'])
+    //         buildConfigField("String", "APP_TYPE", apiFlavorProperties['APP_TYPE'])
+    //         buildConfigField("String", "APP_ID", apiFlavorProperties['APP_ID'])
+    //         buildConfigField("String", "HYDRA_CLIENT_ID", apiFlavorProperties['HYDRA_CLIENT_ID'])
+    //         buildConfigField("String", "STUDY_ID", apiFlavorProperties['STUDY_ID'])
+    //   }
+    //     validcare {
+    //         dimension 'version'
+    //         applicationId "com.validcare.studies"
+    //         namespace "com.harvard"
+    //         versionCode 435001
+    //         versionName "4.3.5"
+    //         // versionNameSuffix "-vc"
 
-            // Include (or overwrite) default api.properties with custom properties
-            def apiFlavorPropertiesFile = rootProject.file("api-validcare-prod.properties")
-            def apiFlavorProperties = new Properties()
-            apiFlavorProperties.load(new FileInputStream(apiFlavorPropertiesFile))
-            buildConfigField("String", "API_KEY", apiFlavorProperties['API_KEY'])
-            buildConfigField("String", "BASE_URL_STUDY_DATASTORE", apiFlavorProperties['BASE_URL_STUDY_DATASTORE'])
-            buildConfigField("String", "BASE_URL_PARTICIPANT_DATASTORE", apiFlavorProperties['BASE_URL_PARTICIPANT_DATASTORE'])
-            buildConfigField("String", "BASE_URL_PARTICIPANT_CONSENT_DATASTORE", apiFlavorProperties['BASE_URL_PARTICIPANT_CONSENT_DATASTORE'])
-            buildConfigField("String", "BASE_URL_PARTICIPANT_ENROLLMENT_DATASTORE", apiFlavorProperties['BASE_URL_PARTICIPANT_ENROLLMENT_DATASTORE'])
-            buildConfigField("String", "BASE_URL_AUTH_SERVER", apiFlavorProperties['BASE_URL_AUTH_SERVER'])
-            buildConfigField("String", "BASE_URL_HYDRA_SERVER", apiFlavorProperties['BASE_URL_HYDRA_SERVER'])
-            buildConfigField("String", "BASE_URL_RESPONSE_DATASTORE", apiFlavorProperties['BASE_URL_RESPONSE_DATASTORE'])
-            buildConfigField("String", "APP_TYPE", apiFlavorProperties['APP_TYPE'])
-            buildConfigField("String", "APP_ID", apiFlavorProperties['APP_ID'])
-            buildConfigField("String", "HYDRA_CLIENT_ID", apiFlavorProperties['HYDRA_CLIENT_ID'])
-            buildConfigField("String", "STUDY_ID", apiFlavorProperties['STUDY_ID'])
-        }
+    //         // Include (or overwrite) default api.properties with custom properties
+    //         def apiFlavorPropertiesFile = rootProject.file("api-validcare-prod.properties")
+    //         def apiFlavorProperties = new Properties()
+    //         apiFlavorProperties.load(new FileInputStream(apiFlavorPropertiesFile))
+    //         buildConfigField("String", "API_KEY", apiFlavorProperties['API_KEY'])
+    //         buildConfigField("String", "BASE_URL_STUDY_DATASTORE", apiFlavorProperties['BASE_URL_STUDY_DATASTORE'])
+    //         buildConfigField("String", "BASE_URL_PARTICIPANT_DATASTORE", apiFlavorProperties['BASE_URL_PARTICIPANT_DATASTORE'])
+    //         buildConfigField("String", "BASE_URL_PARTICIPANT_CONSENT_DATASTORE", apiFlavorProperties['BASE_URL_PARTICIPANT_CONSENT_DATASTORE'])
+    //         buildConfigField("String", "BASE_URL_PARTICIPANT_ENROLLMENT_DATASTORE", apiFlavorProperties['BASE_URL_PARTICIPANT_ENROLLMENT_DATASTORE'])
+    //         buildConfigField("String", "BASE_URL_AUTH_SERVER", apiFlavorProperties['BASE_URL_AUTH_SERVER'])
+    //         buildConfigField("String", "BASE_URL_HYDRA_SERVER", apiFlavorProperties['BASE_URL_HYDRA_SERVER'])
+    //         buildConfigField("String", "BASE_URL_RESPONSE_DATASTORE", apiFlavorProperties['BASE_URL_RESPONSE_DATASTORE'])
+    //         buildConfigField("String", "APP_TYPE", apiFlavorProperties['APP_TYPE'])
+    //         buildConfigField("String", "APP_ID", apiFlavorProperties['APP_ID'])
+    //         buildConfigField("String", "HYDRA_CLIENT_ID", apiFlavorProperties['HYDRA_CLIENT_ID'])
+    //         buildConfigField("String", "STUDY_ID", apiFlavorProperties['STUDY_ID'])
+    //     }
         validcareqa {
             dimension 'version'
             // Update `applicationId` with your Application ID (see https://developer.android.com/studio/build/application-id)
@@ -100,22 +100,22 @@ android {
   }
 
   sourceSets {
-    bubs {
-      res {
-        srcDirs 'src/bubs/res'
-      }
-      java {
-        srcDirs 'src/bubs/java'
-      }
-    }
-    validcare {
-      res {
-        srcDirs 'src/validcare/res'
-      }
-      java {
-        srcDirs 'src/validcare/java'
-      }
-    }
+    // bubs {
+    //   res {
+    //     srcDirs 'src/bubs/res'
+    //   }
+    //   java {
+    //     srcDirs 'src/bubs/java'
+    //   }
+    // }
+    // validcare {
+    //   res {
+    //     srcDirs 'src/validcare/res'
+    //   }
+    //   java {
+    //     srcDirs 'src/validcare/java'
+    //   }
+    // }
     validcareqa {
       res {
         srcDirs 'src/validcareqa/res'
