@@ -8,14 +8,14 @@ apikeyProperties.load(new FileInputStream(apikeyPropertiesFile))
 android {
   flavorDimensions("version")
   productFlavors {
-    fda {
-      dimension 'version'
-      // Update `applicationId` with your Applicaiton ID (see https://developer.android.com/studio/build/application-id)
-      // For example, you could set `applicationId` to "<prefix>_<env>.<domain>" or "com.<domain>.<subdomain>"
-      applicationId "com.harvard.fda"
-      versionCode 15
-      versionName "1.0"
-    }
+    // fda {
+    //   dimension 'version'
+    //   // Update `applicationId` with your Applicaiton ID (see https://developer.android.com/studio/build/application-id)
+    //   // For example, you could set `applicationId` to "<prefix>_<env>.<domain>" or "com.<domain>.<subdomain>"
+    //   applicationId "com.harvard.fda"
+    //   versionCode 15
+    //   versionName "1.0"
+    // }
     bubs {
       dimension 'version'
       applicationId "com.validcare.bubs"
