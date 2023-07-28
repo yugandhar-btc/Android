@@ -12,7 +12,7 @@ android {
       dimension 'version'
       // Update `applicationId` with your Applicaiton ID (see https://developer.android.com/studio/build/application-id)
       // For example, you could set `applicationId` to "<prefix>_<env>.<domain>" or "com.<domain>.<subdomain>"
-      applicationId "YOUR_APPLICATION_ID"
+      applicationId "com.validcare.bubs"
       versionCode 15
       versionName "1.0"
     }
