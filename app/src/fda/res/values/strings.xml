@@ -4,7 +4,7 @@
 <!-- Update `package_name` with the `ApplicationID` that you specified in `Android/app/build.gradle` -->
 <!DOCTYPE resources [
     <!ENTITY app_name "Android Freestyle App">
-    <!ENTITY package_name "com.validcare.bubs">
+    <!ENTITY package_name "com.harvard.fda">
     ]>
 
 <resources>
